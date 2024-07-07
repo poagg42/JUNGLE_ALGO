@@ -36,80 +36,19 @@ N이 20 이하인 입력에 대해서는 두 번째 줄부터 수행 과정을 �
 
 """
 
-# 내가 생각했던 풀이
-
-# N = int(input())
-
-# def makeTop(N):
-#     for i in range(1, N+1):
-#         firstTop.append(i)
-#     firstTop = firstTop[::-1]
-        
-
-
-
-
-
-# print(firstTop)
-
-# firstTop.pop()
-
-# print(firstTop)
-
-# # 횟수
-# print(2 ** N - 1)
-
-# 이동로직 구현
-# while(len(firstTop) != 0 and len(secondTop) != 0):
-#     if len(firstTop) % 2 == 1:
-#         thirdTop.append(firstTop.pop())
-#         print(f'1 3')
-#         secondTop.append(firstTop.pop())
-#         print(f'1 2')
-#         secondTop.append(thirdTop.pop())
-#         print(f'3 2')
-#         if len(firstTop) == 0:
-
-
-
-# def hanoi(N):
-#     # 기저조건
-#     if len(top) == 0:
-#         return
-#     # 홀수면서 firstTop인 경우
-#     if len(top) % 2 == 1 and top == firstTop:
-#         thirdTop.append(top.pop())
-#     # 홀수면서 secondTop인 경우
-#     elif len(top) % 2 == 1 and top == secondTop:
-#         thirdTop.append(top.pop())
-#     # 홀수면서 thirdTop인 경우
-#     elif len(top) % 2 == 1 and top == thirdTop:
-#         secondTop.append(top.pop())
-    
-#     return hanoi()
-        
-
-# 인터넷에서 가져온 풀이
-
 def hanoi(n, from_p, mid_p, to_p):
-
-    # 기저 조건 (base case)
+    # 기저 조건
     if n == 1:
-        print(from_p, to_p, sep = " ")
-
-    # recursive case
+        print(from_p, to_p)
+    # 재귀 조건 
     else:
-
         hanoi(n-1, from_p, to_p, mid_p)
-
         hanoi(1, from_p, mid_p, to_p)
-
         hanoi(n-1, mid_p, from_p, to_p)
 
-a = int(input())
+N = int(input())
 
-print(2**a-1)
+print(2 ** N - 1)
 
-if(a<=20):
-    hanoi(a, 1, 2, 3)
-
+if(N <= 20):
+    hanoi(N, 1, 2, 3)
