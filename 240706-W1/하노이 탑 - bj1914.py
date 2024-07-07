@@ -93,9 +93,11 @@ N이 20 이하인 입력에 대해서는 두 번째 줄부터 수행 과정을 �
 
 def hanoi(n, from_p, mid_p, to_p):
 
+    # 기저 조건 (base case)
     if n == 1:
         print(from_p, to_p, sep = " ")
 
+    # recursive case
     else:
 
         hanoi(n-1, from_p, to_p, mid_p)
