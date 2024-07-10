@@ -36,8 +36,6 @@
 # 높이만큼 절단해버린다.
 # 적어도 M미터의 나무를 집에 가져가기 위해서 절단기에 설정할 수 있는 높이의 최댓값
 
-
-
 treeList = []
 
 N, M = map(int, input().split())
@@ -50,20 +48,14 @@ while start <= end:
     sum = 0
     mid = (start + end) // 2
 
-    # 트리 리스트에서 중간값보다 큰 경우
     for i in treeList:
-        if i > mid:
+        if i - mid > 0:
             sum += i - mid 
     
     if sum < M:
         end = mid - 1
-    else:
+    elif sum >= M:
         start = mid + 1
 
 print(end)
-
-
-
-
-
 

@@ -1,0 +1,1 @@
+{"name":"Local: 나무 자르기 4","url":"/Users/younghookim/Documents/JUNGLE_ALGO/240710-W1/나무 자르기 4.py","tests":[{"id":1720575579056,"input":"4 7\n20 15 10 17","output":"15"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/younghookim/Documents/JUNGLE_ALGO/240710-W1/나무 자르기 4.py","group":"local","local":true}
