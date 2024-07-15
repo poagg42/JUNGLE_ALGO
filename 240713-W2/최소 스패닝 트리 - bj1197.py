@@ -76,6 +76,10 @@ parent = [i for i in range(V + 1)]
 result = 0
 edges = []
 
+# 크루스칼 알고리즘의 단계
+
+# 1. 간선의 가중치 기준으로 정렬
+
 for i in range(E):
     A, B, C = map(int, input().split())
     edges.append((C, A, B))
@@ -85,7 +89,11 @@ edges.sort()
 for edge in edges:
     C, A, B = edge
 
+# 2. 사이클 방지
+
     if find(A) != find(B):
+
+# 3. 최소 스패닝 트리 형성
         union(A, B)
         result += C 
 
