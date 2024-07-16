@@ -45,9 +45,12 @@ input = sys.stdin.readline
 # find - 부모 노드를 찾는다.
                
 def find(a):
+    # 기저 조건 : a가 자신의 부모 노드인지 확인(즉, 루트노드) => 종료
     if a == parent[a]:
         return a 
     
+    
+    # 경로 압축 
     parent[a] = find(parent[a])
 
     return parent[a]
@@ -72,6 +75,7 @@ V, E = map(int, input().split())
 # 행렬에 담기
 
 parent = [i for i in range(V + 1)]
+
 
 result = 0
 edges = []

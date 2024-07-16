@@ -1,0 +1,1 @@
+{"name":"Local: 미로 탐색 - bj2178","url":"/Users/younghookim/Documents/JUNGLE_ALGO/240716 - W2/미로 탐색 - bj2178.py","tests":[{"id":1721126646218,"input":"4 6\n101111\n101010\n101011\n111011","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/younghookim/Documents/JUNGLE_ALGO/240716 - W2/미로 탐색 - bj2178.py","group":"local","local":true}

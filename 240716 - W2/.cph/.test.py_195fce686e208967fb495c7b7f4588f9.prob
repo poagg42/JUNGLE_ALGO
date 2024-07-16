@@ -1,0 +1,1 @@
+{"name":"Local: test","url":"/Users/younghookim/Documents/JUNGLE_ALGO/240716 - W2/test.py","tests":[{"id":1721122625917,"input":"7\n1 6\n6 3\n3 5\n4 1\n2 4\n4 7","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/younghookim/Documents/JUNGLE_ALGO/240716 - W2/test.py","group":"local","local":true}
