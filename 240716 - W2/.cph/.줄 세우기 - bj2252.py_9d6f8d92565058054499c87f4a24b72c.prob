@@ -1,0 +1,1 @@
+{"name":"Local: 줄 세우기 - bj2252","url":"/Users/younghookim/Documents/JUNGLE_ALGO/240716 - W2/줄 세우기 - bj2252.py","tests":[{"id":1721208871149,"input":"3 2\n1 3\n2 3","output":"1 2 3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/younghookim/Documents/JUNGLE_ALGO/240716 - W2/줄 세우기 - bj2252.py","group":"local","local":true}

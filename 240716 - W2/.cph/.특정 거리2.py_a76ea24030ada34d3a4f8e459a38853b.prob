@@ -1,0 +1,1 @@
+{"name":"Local: 특정 거리2","url":"/Users/younghookim/Documents/JUNGLE_ALGO/240716 - W2/특정 거리2.py","tests":[{"id":1721182307004,"input":"4 4 2 1\n1 2\n1 3\n2 3\n2 4","output":"4"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/younghookim/Documents/JUNGLE_ALGO/240716 - W2/특정 거리2.py","group":"local","local":true}

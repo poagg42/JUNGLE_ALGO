@@ -49,7 +49,6 @@ X로부터 출발하여 도달할 수 있는 도시 중에서, 최단 거리가 
 
 """
 
-
 import sys 
 from collections import deque
 
@@ -57,28 +56,45 @@ input = sys.stdin.readline
 
 # 도시의 개수 N, 도로의 개수 M, 거리 정보 K, 출발 도시의 번호 X
 N, M, K, X = map(int, input().split())
+
 graph = [[] for _ in range(N + 1)]
 
+distance = [0] * (N + 1)
+
+visited = [False] * (N + 1)
+
+
 for _ in range(M):
-    a, b = map(int, input().split(' '))
+    a, b = map(int, input().split())
     graph[a].append(b)
+    graph[b].append(a)
 
-distance = [-1] * (N + 1)
-distance[X] = 0
+def bfs(start):
 
-q = deque([X])
-while q:
-    now = q.popleft()
+    answer = []
+    queue = deque([start])
+    distance[start] = 0
+    visited[start] = True 
 
-    for next in graph[now]:
-        if distance[next] == - 1:
-            distance[next] = distance[now] + 1
-            q.append(next)
+    # queue가 
+    while queue:
 
-if K in distance:
-    for i in range(1, N + 1):
-        if distance[i] == K:
-            print(i)
-            check = True
-else:
-    print(-1)
+        v = queue.popleft()
+
+        for i in graph[v]:
+            if not visited[i]:
+                queue.append(i)
+                visited[i] = True
+                distance[i] = distance[v] + 1
+
+                if distance[i] == K:
+                    answer.append(i)
+    if len(answer) == 0:
+        print(-1)
+    else:
+        answer.sort()
+        for i in answer:
+            print(i, end = '\n')
+
+bfs(X)                
+
