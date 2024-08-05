@@ -1,0 +1,1 @@
+{"name":"Local: 웰컴 키트 - bj30802","url":"/Users/younghookim/Documents/JUNGLE_ALGO/240802-W5/웰컴 키트 - bj30802.py","tests":[{"id":1722562505243,"input":"23\n3 1 4 1 5 9\n5 7","output":"7\n3 2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/younghookim/Documents/JUNGLE_ALGO/240802-W5/웰컴 키트 - bj30802.py","group":"local","local":true}
